@@ -1,6 +1,6 @@
 {
   "name": "@vivaxy/vlq",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "🔣Decode and encode Base64 VLQ.",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
