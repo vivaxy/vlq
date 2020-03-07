@@ -1,0 +1,58 @@
+{
+  "name": "@vivaxy/vlq",
+  "version": "1.0.0",
+  "description": "🔣Decode and encode Base64 VLQ.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "scripts": {
+    "benchmark": "node ./benchmark",
+    "build": "tsc",
+    "test": "jest",
+    "coverage": "jest --collect-coverage",
+    "release:beta": "npm run test && npm run build && standard-version --prerelease beta && npm publish --tag beta && git push --follow-tags",
+    "release": "npm run test && npm run build && standard-version && npm publish && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivaxy/vlq.git"
+  },
+  "author": "vivaxy <xyxuye2007@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vivaxy/vlq/issues"
+  },
+  "homepage": "https://github.com/vivaxy/vlq#readme",
+  "lint-staged": {
+    "*.{js,ts,css,less,json,md,html,yml,yaml,pcss,jsx,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^25.1.4",
+    "benchmark": "^2.1.4",
+    "fs-extra": "^8.1.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "standard-version": "^7.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3",
+    "vlq": "^1.0.1"
+  }
+}
