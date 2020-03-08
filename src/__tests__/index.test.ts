@@ -21,4 +21,5 @@ test('decode', function() {
   expect(decode('3H')).toStrictEqual([-123]);
   expect(decode('ktC')).toStrictEqual([1234]);
   expect(decode('EAEE')).toStrictEqual([2, 0, 2, 2]);
+  expect(() => decode('?')).toThrow('Invalid character (?)');
 });
