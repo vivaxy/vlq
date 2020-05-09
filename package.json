@@ -46,7 +46,7 @@
     "benchmark": "^2.1.4",
     "fs-extra": "^9.0.0",
     "husky": "^4.2.3",
-    "jest": "^25.1.0",
+    "jest": "^26.0.0",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "standard-version": "^7.1.0",
