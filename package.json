@@ -42,7 +42,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@types/jest": "^25.1.4",
+    "@types/jest": "^26.0.0",
     "benchmark": "^2.1.4",
     "fs-extra": "^9.0.0",
     "husky": "^4.2.3",
