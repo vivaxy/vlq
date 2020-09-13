@@ -40,8 +40,8 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.0.0",
-    "@commitlint/config-conventional": "^9.0.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/jest": "^26.0.0",
     "benchmark": "^2.1.4",
     "fs-extra": "^9.0.0",
